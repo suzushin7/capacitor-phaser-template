@@ -1,0 +1,35 @@
+{
+  "name": "capacitor-phaser-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-android": "npx cap build android",
+    "build-ios": "npx cap build ios",
+    "build": "npx vite build",
+    "copy": "npx cap copy",
+    "sync": "npx cap sync",
+    "open-android": "npx cap open android",
+    "open-ios": "npx cap open ios",
+    "preview": "npx vite preview",
+    "dev": "vite",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@capacitor/android": "^7.2.0",
+    "@capacitor/cli": "^7.2.0",
+    "@capacitor/core": "^7.2.0",
+    "@capacitor/ios": "^7.2.0",
+    "@capacitor/screen-orientation": "^7.0.1",
+    "phaser": "^3.88.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.0",
+    "typescript": "^5.8.3",
+    "vite": "^6.2.6"
+  }
+}
