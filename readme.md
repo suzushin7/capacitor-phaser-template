@@ -10,8 +10,9 @@ To get started with this template, clone the repository and install the dependen
 npm install
 npx cap add android
 npx cap add ios
-npx cap build android
-npx cap build ios
-npx cap open android
-npx cap open ios
+npm run build
+npm run build-android
+npm run build-ios
+npm run open-android
+npm run open-ios
 ```
