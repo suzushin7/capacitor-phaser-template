@@ -1,4 +1,5 @@
 import { defineConfig } from "vite";
+import javascriptObfuscator from "vite-plugin-javascript-obfuscator";
 import path from "path";
 
 export default defineConfig({
@@ -10,11 +11,31 @@ export default defineConfig({
     },
   },
   server: {
-    host: true, // 他デバイスからのアクセスも可能にする（スマホ確認など）
+    host: true,
     port: 5173,
   },
   build: {
     outDir: "../dist",
     emptyOutDir: true,
+    minify: true,
   },
+  plugins: [
+    javascriptObfuscator({
+      options: {
+        compact: true,
+        controlFlowFlattening: true,
+        deadCodeInjection: true,
+        debugProtection: true,
+        disableConsoleOutput: false,
+        identifierNamesGenerator: "hexadecimal",
+        numbersToExpressions: true,
+        renameGlobals: false,
+        rotateStringArray: true,
+        selfDefending: true,
+        stringArray: true,
+        stringArrayEncoding: ["rc4"],
+        stringArrayThreshold: 0.75,
+      },
+    }),
+  ],
 });

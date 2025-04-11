@@ -4,15 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build-android": "npx cap build android",
-    "build-ios": "npx cap build ios",
-    "build": "npx vite build",
-    "copy": "npx cap copy",
+    "build": "npx vite build && npx cap copy",
+    "build:android": "npx vite build && npx cap copy && npx cap open android",
+    "build:ios": "npx vite build && npx cap copy && npx cap open ios",
     "sync": "npx cap sync",
-    "open-android": "npx cap open android",
-    "open-ios": "npx cap open ios",
     "preview": "npx vite preview",
-    "dev": "vite",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -25,7 +21,9 @@
     "@capacitor/core": "^7.2.0",
     "@capacitor/ios": "^7.2.0",
     "@capacitor/screen-orientation": "^7.0.1",
-    "phaser": "^3.88.2"
+    "@capacitor/status-bar": "^7.0.1",
+    "phaser": "^3.88.2",
+    "vite-plugin-javascript-obfuscator": "^3.1.0"
   },
   "devDependencies": {
     "@types/node": "^22.14.0",
