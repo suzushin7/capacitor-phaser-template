@@ -63,16 +63,16 @@ Then run via Android Studio or Xcode.
 
 ## Features
 
-✅ Phaser + TypeScript game loop
-✅ Fullscreen immersive mode (Android)
-✅ StatusBar hidden
-✅ Obfuscated build (optional)
-✅ Cross-platform mobile deployment
+- ✅ Phaser + TypeScript game loop
+- ✅ Fullscreen immersive mode (Android)
+- ✅ StatusBar hidden
+- ✅ Obfuscated build (optional)
+- ✅ Cross-platform mobile deployment
 
 ## Distribution
 
-Android: Export .aab from Android Studio → Google Play
-iOS: Archive in Xcode → App Store Connect
+- Android: Export .aab from Android Studio → Google Play
+- iOS: Archive in Xcode → App Store Connect
 
 ## License
 
